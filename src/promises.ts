@@ -13,7 +13,7 @@ const myPromise = new Promise((resolve, _rejecte) => {
   // but if it is only a success message, it probably will be.
 myPromise
     .then(data => console.log(data))
-    .catch(e=>console.error(eval));
+    .catch(e=>console.error(e));
 
 const wait = (ms: number) => new Promise((resolve) =>setTimeout(resolve,ms));
 wait (10 *1000)

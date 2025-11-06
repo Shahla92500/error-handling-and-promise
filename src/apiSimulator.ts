@@ -42,8 +42,6 @@ getProductDetails()
     })
     .then(relatedProducts => console.log(relatedProducts));
 
-getProductReviews()
-.then(reviews => console.log(reviews))
 
 Promise.race([getProductDetails(), getProductReviews(), getRelatedProducts()])
 .then(data => console.log(data))
